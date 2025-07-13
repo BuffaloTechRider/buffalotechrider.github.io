@@ -14,3 +14,14 @@ Currently, I’m working on bringing generative AI to the automotive Alexa exper
 In my free time, I enjoy traveling, hiking, camping, backpacking, skiing, and discovering great hot pot spots.
 
 I’m skilled in C/C++, Java, Python, Scala, Tcl, and TypeScript, with strong experience in applied machine learning and computer vision, software design and development, computer architecture, and distributed systems. I hold a Master’s degree in Computer Engineering from Seoul National University, where I focused on video compression and computer vision, and a Ph.D. in Computer Engineering, with a focus on software/hardware security and applying machine learning to security problems.
+## Latest Publications
+
+{% for pub in site.publications reversed limit:3 %}
+  * [{{ pub.title }}]({{ pub.url }}) - {{ pub.date | date: "%Y" }}
+{% endfor %}
+## Recent Updates
+
+{% assign all_items = site.publications | concat: site.posts | concat: site.talks | sort: 'date' | reverse %}
+{% for item in all_items limit:5 %}
+  * [{{ item.title }}]({{ item.url }}) - {{ item.date | date: "%B %Y" }}
+{% endfor %}
