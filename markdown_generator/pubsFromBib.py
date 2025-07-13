@@ -121,6 +121,8 @@ for pubsource in publist:
 
             md += "\nvenue: '" + html_escape(venue) + "'"
             
+            md += "\ncategory: manuscripts"
+            
             url = False
             if "url" in b.keys():
                 if len(str(b["url"])) > 5:
