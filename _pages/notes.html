@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Notes"
+permalink: /notes/
+author_profile: true
+---
+
+{% include base_path %}
+{% assign sorted_notes = site.notes | sort: 'date' | reverse %}
+{% if sorted_notes.size > 0 %}
+  {% for post in sorted_notes %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No notes available yet. Please check back soon.</p>
+{% endif %}

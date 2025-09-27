@@ -22,6 +22,8 @@ main:
         
   - title: "Blog Posts"
     url: /year-archive/
+  - title: "Notes"
+    url: /notes/
     
   - title: "CV"
     url: /files/cv.pdf
