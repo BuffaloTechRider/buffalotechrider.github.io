@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "BuffaloTechRider"
 title_separator          : "-"
 name                     : &name "Paul Nguyen"
-description              : &description "Personal Webiste of Paul Nguyen, the BuffaloTechRider"
+description              : &description "Personal site of Paul Nguyen — Applied AI Engineer shipping safety-critical AI products, with a focus on GenAI integration and responsible deployment"
 url                      : https://buffalotechrider.github.io/ 
 baseurl                  : "" 
 repository               : "BuffaloTechRider/buffalotechrider.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Paul Nguyen"
   pronouns         : # example: "she/her"  
-  bio              : "Machine Learning & Software Engineer | Researcher | Gen AI & Language & Video Processing | Ex-Young Buffalo Herder"
+  bio              : "Applied AI Engineer — Safety-Critical AI Products | Building Autodidact (local-first agent that learns) | PhD (Adversarial ML & Security)"
   location         : "San Francisco Bay Area, California, USA"
   employer         : "Amazon"
   uri              : # URL
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "lnguyen91"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

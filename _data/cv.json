@@ -1,152 +1,194 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Paul Nguyen (Luong Nguyen)",
+    "email": "lnguyen91@gatech.edu",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://buffalotechrider.github.io",
+    "summary": "Applied AI engineer building safety-critical AI products. Ship generative AI into a mass-market automotive environment. Building autodidact — an open-source local-first AI agent that learns from its cloud queries. PhD research in adversarial detection and hidden behavior analysis (IEEE TVLSI, IEEE TDSC).",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "San Francisco Bay Area",
       "countryCode": "US",
-      "region": ""
+      "region": "California"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=6PoP_1sAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0001-8555-4376"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "BuffaloTechRider",
+        "url": "https://github.com/BuffaloTechRider"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "lnguyen91",
+        "url": "https://www.linkedin.com/in/lnguyen91"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Amazon",
+      "position": "Machine Learning Engineer — Alexa Auto",
+      "website": "",
+      "startDate": "2022-08",
+      "endDate": "Present",
+      "summary": "Applied ML engineer shipping generative AI into automotive Alexa. Work spans the full stack — fine-tuning and evaluation, cloud infrastructure, device-side integration, and cross-team coordination across the domain teams (music, car control, navigation, search) whose features ride on the GenAI stack.",
+      "highlights": [
+        "Led cross-functional integration of generative AI into the Alexa Auto experience, contributing across the entire ML engineering stack from model fine-tuning to scalable cloud infrastructure",
+        "Fine-tuned and evaluated LLMs to improve in-car voice assistant capabilities and contextual understanding; owned evaluation frameworks and benchmarks for edge-environment deployment",
+        "Built tooling and infrastructure for seamless deployment of GenAI features across Alexa Auto clients, coordinating with music, car control, navigation, and search domain teams to turn generic LLM capability into automotive-specific experts",
+        "Designed and delivered voice- and text-based search and navigation experiences tailored for automotive environments, including ranking models and autocomplete algorithms for Alexa Auto text search",
+        "Built scalable indexing pipelines using Apache Spark, Amazon EMR, OpenSearch, and S3 to power efficient ingestion, transformation, and retrieval for product features",
+        "Architected experimentation frameworks on AWS Bedrock (including Anthropic's Claude models) to explore LLM-powered improvements in automotive search and navigation",
+        "Root-caused a permanent-offline regression by analyzing multi-million-line device logs, tracing the bug to stale state-machine persistence in the auth subsystem — corrected my own initial hypothesis twice based on evidence before landing the fix",
+        "Diagnosed recurring AI-system degradation that had been misdiagnosed as a network issue by correlating timing patterns across shared event loops, identifying resource contention as the actual root cause",
+        "Created a team-wide decision-trace methodology to capture non-obvious engineering reasoning, making systemic debugging reusable across team members"
+      ]
+    },
+    {
+      "company": "Synopsys Inc.",
+      "position": "Senior R&D Engineer I",
+      "website": "",
+      "startDate": "2020-07",
+      "endDate": "2022-08",
+      "summary": "R&D on signoff products (timing and power analysis) for chip designs, applying machine learning and distributed computing to speed up and improve established EDA flows.",
+      "highlights": [
+        "Developed new flows and features for Synopsys signoff products using machine learning and distributed computing",
+        "Built C/C++ algorithms for timing and power analysis of complex chip designs"
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "position": "Graduate Research Assistant",
+      "website": "",
+      "startDate": "2016-08",
+      "endDate": "2020-07",
+      "summary": "PhD research on detecting hidden malicious behaviors in complex systems through electromagnetic side-channel analysis and machine learning. Published in IEEE TVLSI and IEEE TDSC; the broader research program attracted $5M in NSF funding.",
+      "highlights": [
+        "Developed the first off-chip electromagnetic side-channel technique capable of detecting dormant hardware trojans as small as 0.31% of the original circuit with 100% accuracy and 0% false positives — this program received $5M in NSF funding for further development",
+        "Built a framework that uses electromagnetic side-channel signals to detect malicious software activity on embedded and cyber-physical systems — achieved AUC > 99.5% and 100% detection at under 1% false positive rate from distances up to 3 meters",
+        "Prototyped ASIC designs (AES, PIC16F84, RS232) with inserted trojans to create benchmarks for the new detection technique; validated on FPGA and IoT boards using spectrum analyzers, oscilloscopes, signal generators, and software-defined radios",
+        "Implemented the AES ROCC accelerator in Chisel for the RISC-V Rocket chip on FPGA — the first implementation of AES ROCC for RISC-V Rocket"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "Georgia Institute of Technology",
+      "area": "Ph.D. in Computer Engineering — Adversarial ML & Detection of Hidden Malicious Behaviors in Complex Systems",
+      "studyType": "Ph.D.",
+      "startDate": "2016",
+      "endDate": "2020",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
+      "institution": "Seoul National University",
+      "area": "M.S. in Computer Engineering — Video Compression & Computer Vision",
+      "studyType": "M.S.",
       "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "endDate": "2015",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Python",
+        "C++14/17",
+        "Java",
+        "Kotlin",
+        "TypeScript",
+        "Scala",
+        "Chisel (HDL)"
+      ]
+    },
+    {
+      "name": "Applied AI",
+      "keywords": [
+        "GenAI Product Integration",
+        "LLM Fine-tuning & Evaluation",
+        "AWS Bedrock",
+        "Anthropic Claude",
+        "Prompt Engineering",
+        "Model Distillation",
+        "Ranking / Autocomplete",
+        "PyTorch",
+        "HuggingFace Transformers"
+      ]
+    },
+    {
+      "name": "Systems & Infrastructure",
+      "keywords": [
+        "Apache Spark",
+        "Amazon EMR",
+        "OpenSearch",
+        "Amazon S3",
+        "AWS Services",
+        "Android SDK / NDK",
+        "On-Device Deployment",
+        "Distributed Systems Debugging",
+        "Safety-Critical Deployment"
+      ]
+    },
+    {
+      "name": "Domains",
+      "keywords": [
+        "AI Safety",
+        "Automotive Voice AI",
+        "Speech / Audio Systems",
+        "Search & Information Retrieval",
+        "Adversarial Detection",
+        "Responsible AI Deployment"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Creating a backscattering side channel to enable detection of dormant hardware trojans",
+      "publisher": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+      "releaseDate": "2019-01-01",
+      "website": "/publication/2019-01-01-Creating-a-backscattering-side-channel-to-enable-detection-of-dormant-hardware-trojans",
+      "summary": "Applied ML-based electromagnetic side-channel analysis to detect hidden adversarial behaviors in complex hardware systems — directly analogous to detecting misaligned behavior in opaque AI systems"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "IDEA: Intrusion detection through electromagnetic-signal analysis for critical embedded and cyber-physical systems",
+      "publisher": "IEEE Transactions on Dependable and Secure Computing",
+      "releaseDate": "2019-01-01",
+      "website": "/publication/2019-01-01-IDEA-Intrusion-detection-through-electromagnetic-signal-analysis-for-critical-embedded-and-cyber-physical-systems",
+      "summary": "ML-based anomaly detection via side-channel signals in embedded systems — foundational work in detecting hidden behaviors through indirect observation, a core challenge in AI interpretability"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Malware detection in embedded systems using neural network model for electromagnetic side-channel signals",
+      "publisher": "Journal of Hardware and Systems Security",
+      "releaseDate": "2019-01-01",
+      "website": "/publication/2019-01-01-Malware-detection-in-embedded-systems-using-neural-network-model-for-electromagnetic-side-channel-signals",
+      "summary": "Neural network approach to detecting malicious software execution patterns via electromagnetic emanations"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Exploiting switching of transistors in digital electronics for RFID tag design",
+      "publisher": "IEEE Journal of Radio Frequency Identification",
+      "releaseDate": "2019-01-01",
+      "website": "/publication/2019-01-01-Exploiting-switching-of-transistors-in-digital-electronics-for-RFID-tag-design",
+      "summary": "Novel approach to passive RFID tag design leveraging transistor switching characteristics"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

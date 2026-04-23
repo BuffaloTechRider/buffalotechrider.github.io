@@ -7,5 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-Coming soon
-
+{% if site.portfolio.size > 0 %}
+{% for post in site.portfolio %}
+{% include archive-single.html %}
+{% endfor %}
+{% else %}
+<p>No portfolio entries available yet. Please check back soon.</p>
+{% endif %}
