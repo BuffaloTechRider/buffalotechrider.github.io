@@ -9,7 +9,9 @@ redirect_from:
 
 Hi, I'm Paul Nguyen (Luong Nguyen). I grew up in a small rural village in northern Vietnam, where I used to herd and ride water buffalo—an essential companion in our daily farming life. That experience shaped my resilience and grounded my journey into technology.
 
-Currently, I'm working on bringing generative AI to the automotive Alexa experience. My work spans a wide range of machine learning engineering tasks—from fine-tuning models to building infrastructure and tools that integrate GenAI into Alexa Auto clients. I also pursue personal projects where I develop models and explore machine learning solutions for various challenges I encounter. I am passionate about audio and natural languague processing, building cool tools and products, and software engineering and tech in general.
+Currently, I build applied AI systems where reliability matters. At Amazon I lead the integration of generative AI into the Alexa Auto experience - fine-tuning and evaluating LLMs, building the infrastructure that gets them shipped, and coordinating across domain teams (music, car control, navigation, search) to turn generic model capability into automotive-specific experiences.
+
+I also pursue personal projects where I develop models and explore machine learning solutions for various challenges I encounter. Currently building Autodidact, an open-source local-first AI agent that learns from its cloud queries - the local brain answers what it knows, escalates to the cloud when it doesn't, and distills what it learns back down.
 
 In my free time, I enjoy traveling, hiking, camping, backpacking, skiing, and discovering great hot pot spots.
 
@@ -17,7 +19,7 @@ I'm skilled in C/C++, Java, Python, Scala, Tcl, and TypeScript, with strong expe
 
 ## Why AI Safety
 
-My career has been a steady progression toward AI safety, though I didn't have the words for it at the time. My PhD was about detecting hidden malicious behaviors in complex systems — using electromagnetic side-channel analysis and machine learning to find hardware trojans and malware designed to evade detection. The core skill was probing opaque systems for structure and intent that weren't meant to be seen, which is strikingly close to what mechanistic interpretability researchers are doing with neural networks today.
+My career has been a steady progression toward AI safety, though I didn't have the words for it at the time. My PhD was about detecting hidden malicious behaviors in complex systems - using electromagnetic side-channel analysis and machine learning to find hardware trojans and malware designed to evade detection. The core skill was probing opaque systems for structure and intent that weren't meant to be seen, which is strikingly close to what mechanistic interpretability researchers are doing with neural networks today.
 
 Over the last few years at Amazon, I moved from analyzing hidden behaviors to building AI products where failures have real-world consequences. Shipping generative AI into a vehicle means taking graceful degradation, fail-safe defaults, and "when *not* to ship" seriously as design constraints — the same principles that shape responsible scaling for frontier AI. I spend more of my day on the applied-engineering side of this (prompt scaffolding, integration, evaluation, fine-tuning, monitoring) than on inference kernels or model architecture research, and I'm explicit about that. What I bring is the discipline of making AI systems actually work in the hands of real users under reliability constraints that don't forgive sloppy engineering.
 
