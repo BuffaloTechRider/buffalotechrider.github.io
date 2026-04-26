@@ -16,22 +16,22 @@ Injecting retrieved context into a "should I answer?" confidence gate made the s
 
 **TL;DR**
 
-- RAG injected into "should I answer" gates can lower the signal by 0.08 AUROC, not raise it. The model has the answer in its weights; the retrieval makes it second-guess itself.
+- RAG injected into "should I answer" gates can lower the signal by 0.08 AUROC, not raise it. In some cases, the model has the answer in its weights but the retrieval makes it second-guess itself.
 - Self-assessment prompts vary wildly by model. Mistral-7B's "direct" prompt hits 0.747 AUROC. Llama 3.1 at 8B is barely above chance with any prompt. Pick your model for calibration, not just capability.
-- Naïve 6-signal ensembles can underperform the best single signal. Thompson Sampling fusion at 0.564 AUROC lost to a single logprob signal at 0.642.
+- Naive 6-signal ensembles can underperform the best single signal. Thompson Sampling fusion at 0.564 AUROC lost to a single logprob signal at 0.642.
 - Retrieval quality is often the real bottleneck. If only 10/60 of your eval queries return any retrieval hit, you're measuring noise, not RAG.
 
-Numbers from real runs on MMLU-Pro against Ollama + AWS Bedrock. None of this is final — the v0.1 main experiment is still running.
+Numbers from real runs on MMLU-Pro against Ollama + AWS Bedrock. None of this is final - the v0.1 main experiment is still running.
 
 ---
 
-I've been building **Autodidact**, a local-first AI agent framework. The central piece is a **confidence evaluator** — something that decides whether a small local model (Qwen 2.5 7B, Llama 3.1 8B, Mistral 7B) can answer a question, or whether to escalate to a cloud model (Claude 4.5, GPT, etc.).
+I've been building **Autodidact**, a local-first AI agent framework. The central piece is a **confidence evaluator** - something that decides whether a small local model (Qwen 2.5 7B, Llama 3.1 8B, Mistral 7B) can answer a question, or whether to escalate to a cloud model (Claude 4.5, GPT, etc.).
 
 Autodidact is still a project in development. I'll link the repo once v0.1 is stable enough for external eyes — until then, this post is the current state of the experiments.
 
 If it works, you get cheap local inference most of the time and cloud only when needed. If it doesn't, you either hallucinate (local answers wrong questions) or escalate everything (pay cloud prices for no benefit).
 
-This post is the findings I wish I'd known before starting — written while the v0.1 main experiment is still running, so treat it as a lab notebook, not a final report.
+This post is the findings I wish I'd known before starting - written while the v0.1 main experiment is still running, so treat it as a lab notebook, not a final report.
 
 ## The setup in one paragraph
 
