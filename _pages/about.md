@@ -28,9 +28,9 @@ The thread connecting these experiences: side-channel analysis maps to interpret
 ## Latest Publications
 
 {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
-{% for pub in sorted_pubs limit:3 %}
-  * [{{ pub.title }}]({{ pub.url }}) - {{ pub.date | date: "%Y" }}
-{% endfor %}
+  * [{{ sorted_pubs[0].title }}]({{ sorted_pubs[0].url }}) - {{ sorted_pubs[0].date | date: "%Y" }}
+  * [A Novel Golden-Chip-Free Clustering Technique Using Backscattering Side Channel for Hardware Trojan Detection](/publication/2020-12-01-Golden-chip-free-clustering-hardware-trojan-detection) - 2020 🏆 Best Paper Award
+  * [A Reduction of Interpolation Redundancy for Fractional Motion Estimation in HEVC](/publication/2016-05-01-Reduction-of-interpolation-redundancy-HEVC) - 2016 🏆 Best Paper Award
 ## Recent Updates
 
 {% assign all_items = site.publications | concat: site.posts | concat: site.talks | sort: 'date' | reverse %}
