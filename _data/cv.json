@@ -192,7 +192,58 @@
       "publisher": "IEEE Journal of Radio Frequency Identification",
       "releaseDate": "2019-01-01",
       "website": "/publication/2019-01-01-Exploiting-switching-of-transistors-in-digital-electronics-for-RFID-tag-design",
-      "summary": "Novel approach to passive RFID tag design leveraging transistor switching characteristics"
+      "summary": "Novel approach to passive RFID tag design leveraging transistor switching characteristics (Best Poster Award, RFID 2018)"
+    },
+    {
+      "name": "A Novel Golden-Chip-Free Clustering Technique Using Backscattering Side Channel for Hardware Trojan Detection",
+      "publisher": "IEEE International Symposium on Hardware Oriented Security and Trust (HOST)",
+      "releaseDate": "2020-12-01",
+      "website": "/publication/2020-12-01-Golden-chip-free-clustering-hardware-trojan-detection",
+      "summary": "Golden-chip-free unsupervised hardware trojan detection using electromagnetic backscattering side channels (Best Paper Award, HOST 2020)"
+    },
+    {
+      "name": "A Reduction of Interpolation Redundancy for Fractional Motion Estimation in HEVC",
+      "publisher": "2016 SoC Conference of Korea",
+      "releaseDate": "2016-05-01",
+      "website": "/publication/2016-05-01-Reduction-of-interpolation-redundancy-HEVC",
+      "summary": "Reduced redundant interpolation computations in HEVC fractional motion estimation (Best Paper Award)"
+    },
+    {
+      "name": "Advanced Decision of PU Partition and CU Depth for Fractional Motion Estimation in HEVC",
+      "publisher": "International Conference on Electronics, Information and Communication (ICEIC)",
+      "releaseDate": "2016-01-01",
+      "website": "/publication/2016-01-01-Advanced-decision-PU-partition-CU-depth-HEVC",
+      "summary": "Early termination algorithm for PU partition and CU depth decisions in HEVC fractional motion estimation"
+    }
+  ],
+  "patents": [
+    {
+      "name": "ANTENNA-LESS RFID TAG",
+      "number": "20200160133",
+      "date": "2020-05-21",
+      "status": "Published",
+      "inventors": "Alenka Zajic, Chia-Lin Cheng, Luong N. Nguyen, Milos Prvulovic"
+    },
+    {
+      "name": "SYSTEM AND METHOD FOR DETECTING HARDWARE TROJAN CIRCUITS",
+      "number": "",
+      "date": "2020-05",
+      "status": "Pending",
+      "inventors": "Alenka Zajic, Luong N. Nguyen, Chia-Lin Cheng, Milos Prvulovic"
+    },
+    {
+      "name": "RFID Trojan Detection",
+      "number": "",
+      "date": "2019-12",
+      "status": "Disclosure Approved",
+      "inventors": "Alenka Zajic, Baki Yilmaz, Luong N. Nguyen, Chia-Lin Cheng, Milos Prvulovic"
+    },
+    {
+      "name": "Near Field Backscattering based Sensing for Hardware Trojan Detection",
+      "number": "",
+      "date": "2020-06",
+      "status": "Submitted",
+      "inventors": "Alenka Zajic, Sinan Adibelli, Prateek Juyal, Luong N. Nguyen, Milos Prvulovic"
     }
   ],
   "presentations": [],

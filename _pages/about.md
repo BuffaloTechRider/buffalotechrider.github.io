@@ -27,7 +27,8 @@ The thread connecting these experiences: side-channel analysis maps to interpret
 
 ## Latest Publications
 
-{% for pub in site.publications reversed limit:3 %}
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% for pub in sorted_pubs limit:3 %}
   * [{{ pub.title }}]({{ pub.url }}) - {{ pub.date | date: "%Y" }}
 {% endfor %}
 ## Recent Updates
