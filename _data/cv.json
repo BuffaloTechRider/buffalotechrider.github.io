@@ -160,6 +160,13 @@
   "references": [],
   "publications": [
     {
+      "name": "Zero-Shot Confidence Estimation for Small LLMs: When Supervised Baselines Aren't Worth Training",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-05-01",
+      "website": "/publication/2026-05-01-Zero-shot-confidence-estimation-for-small-LLMs",
+      "summary": "Demonstrated that average token log-probability matches or beats supervised routing (RouteLLM) in-distribution and significantly outperforms it under distribution shift — tested across 3 model families, 2 datasets, ~4,500 queries"
+    },
+    {
       "name": "Creating a backscattering side channel to enable detection of dormant hardware trojans",
       "publisher": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
       "releaseDate": "2019-01-01",
