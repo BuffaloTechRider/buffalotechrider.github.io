@@ -1,5 +1,5 @@
 ---
-title: "A transformer block from scratch"
+title: "A transformer block from scratch: demystifying LLMs by building one"
 date: 2026-05-09
 permalink: /posts/2026/05/transformer-from-scratch/
 tags:
@@ -9,7 +9,7 @@ tags:
   - learning-log
 ---
 
-Many people see LLMs as a magic black box. At the architecture level, they're simpler than they look. The core of every modern LLM - GPT, Claude, Gemini, Llama — is a **transformer block**. Stack one transformer block N times (typically 12 to 80), add an embedding layer at the input and an output head at the output, and you have a working ChatGPT-style LLM. That's the whole recipe.
+Many people see LLMs as a magic black box. At the architecture level, they're simpler than they look. The core of every modern LLM - GPT, Claude, Gemini, Llama - is a **transformer block**. Stack one transformer block N times (typically 12 to 80), add an embedding layer at the input and an output head at the output, and you have a working ChatGPT-style LLM. That's the whole recipe.
 
 This is the post I wish I'd read before I started. Not "what is a transformer" - there are a hundred of those. This is the specific set of questions that blocked me, the architectural framings that finally made it click, and the handful of bugs that wasted the most time. After reading this (or better, implementing alongside it), you'll be able to answer concretely: what does it mean when someone says a model has 70B parameters, what actually defines a model's context window, and why are Q/K/V three separate things.
 
@@ -76,8 +76,8 @@ Before we go deeper, let's ground the notation. Every transformer block input is
 
 Imagine you're running the model on two sentences at once:
 
-- Sentence 1: `"The cat sat"` — 3 tokens
-- Sentence 2: `"A dog ran"` — 3 tokens
+- Sentence 1: `"The cat sat"` - 3 tokens
+- Sentence 2: `"A dog ran"` - 3 tokens
 
 Then:
 
@@ -87,7 +87,7 @@ Then:
 | S | seq_len | 3 | Each sentence has 3 tokens |
 | d_model | hidden dim | 4 here, 4096 in real LLMs | Each token is represented as a d_model-dim vector |
 
-Input tensor shape: `[2, 3, 4]` — literally 2×3×4 = 24 numbers. Picture it as a stack of two 3×4 matrices:
+Input tensor shape: `[2, 3, 4]` - literally 2×3×4 = 24 numbers. Picture it as a stack of two 3×4 matrices:
 
 ```
 Sentence 1 ("The cat sat"):
@@ -101,7 +101,7 @@ Sentence 2 ("A dog ran"):
   Position 2 ("ran"): [0.4, 0.5, 0.2, 0.8]
 ```
 
-`x[1, 2, :]` is the 4-dim vector for `"ran"` (sentence index 1, position 2, all features). Those numbers didn't start as these specific values — they come from an embedding layer (a learned `[vocab_size, d_model]` lookup table that converts each token's integer ID into a d_model-dim vector).
+`x[1, 2, :]` is the 4-dim vector for `"ran"` (sentence index 1, position 2, all features). Those numbers didn't start as these specific values - they come from an embedding layer (a learned `[vocab_size, d_model]` lookup table that converts each token's integer ID into a d_model-dim vector).
 
 ### What "Context Window" Actually Means
 
@@ -110,10 +110,10 @@ The **context window** is the maximum value of `S` the model can handle. Llama 3
 What defines it in the architecture, specifically:
 
 - **Attention is O(S²)** — doubling `S` quadruples compute. Long context is expensive.
-- **KV-cache memory grows linearly with S** — every layer stores K and V for every past token. At 200K context on a 70B model, this is gigabytes per request.
-- **Positional encoding determines extrapolation** — with absolute position embeddings, you literally can't extend past what was trained. With rotary embeddings (RoPE), you can go further. That's a big reason modern context windows got so large.
+- **KV-cache memory grows linearly with S** - every layer stores K and V for every past token. At 200K context on a 70B model, this is gigabytes per request.
+- **Positional encoding determines extrapolation** - with absolute position embeddings, you literally can't extend past what was trained. With rotary embeddings (RoPE), you can go further. That's a big reason modern context windows got so large.
 
-So "context window" isn't a single architectural property — it's the combination of training length, available inference memory, and positional scheme. Once you've built the attention yourself, you can see exactly why each of those constraints bites.
+So "context window" isn't a single architectural property - it's the combination of training length, available inference memory, and positional scheme. Once you've built the attention yourself, you can see exactly why each of those constraints bites.
 
 ### What "Parameters" Actually Means
 
@@ -175,7 +175,7 @@ They don't have to. Three things do the work:
 
 That third point was the one I hadn't internalized. A single attention layer doesn't need to figure out "the whole meaning of this sequence." It just moves information around a bit, then the FFN processes it, then the next layer does it again. The depth is what makes the integration rich.
 
-### 3. Prompts don't reconfigure the model — they populate working memory
+### 3. Prompts don't reconfigure the model - they populate working memory
 
 This is the conceptual pivot that reframed how I think about prompt engineering and few-shot learning.
 
